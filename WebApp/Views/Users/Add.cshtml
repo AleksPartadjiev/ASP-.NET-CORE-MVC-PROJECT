@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Add User";
+}
+<link rel="stylesheet" href="~/css/users/add.css" />
+<div>
+    <h1>Register</h1>
+
+    <form>
+        <div class="register">
+            <div>
+                <p class="check-message" id="username-existing"></p>
+                <label>Username</label>
+                <input type="text" id="username" />
+                <p class="text-validation" id="validation-user"></p>
+            </div>
+
+            <div>
+                <label>Password</label>
+                <input type="password" id="password" />
+                <p class="text-validation" id="validation-pass"></p>
+            </div>
+
+            <div>
+                <p class="check-message" id="email-existing"></p>
+                <label>Email</label>
+                <input type="text" id="email" />
+                <p class="text-validation" id="validation-email"></p>
+            </div>
+        </div>
+        <button id="register-user-button" type="button">Submit</button>
+    </form>
+
+    <div class="message" id="registration-message"></div>
+</div>
+<script src="~/js/user.js"></script>

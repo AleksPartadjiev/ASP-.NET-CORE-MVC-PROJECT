@@ -1,0 +1,60 @@
+﻿/* Hero section */
+.hero {
+    text-align: center;
+    padding: 60px;
+    background-color: #f0f4f8; /* Светъл фон */
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333; /* Тъмносив цвят за заглавието */
+    margin-bottom: 20px;
+}
+
+/* Categories section */
+.categories {
+    display: flex;
+    justify-content: space-around; /* Подравнява елементите с разстояние помежду им */
+    align-items: center;
+    margin: 40px 0;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Лека сянка за дълбочина */
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Определената ширина на картата */
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+    transform: scale(1.05); /* Леко увеличение при hover */
+}
+
+.category-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.category-card h2 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #333; /* Тъмносив за модерен вид */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column; /* В мобилен изглед категориите ще са една под друга */
+        align-items: center;
+    }
+    
+    .category-card {
+        margin-bottom: 20px;
+        width: 80%; /* Ширина от 80% за мобилния изглед */
+    }
+}

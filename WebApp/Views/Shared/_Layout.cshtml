@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My E-Commerce Site</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+<body>
+    <header>
+        @await Html.PartialAsync("_Header")<!-- Това вмъква отделен частичен изглед за хедъра -->
+    </header>
+
+    <div class="container">
+        @RenderBody() <!-- Тук се показва съдържанието на всяка конкретна страница -->
+    </div>
+
+    <footer>
+        @await Html.PartialAsync("_Footer")
+    </footer>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>
